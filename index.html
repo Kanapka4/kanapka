@@ -1,0 +1,52 @@
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<title>Kanapka</title>
+<meta name="generator" content="Geany 2.1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <button id="burger" class="burger">
+    ☰</button>
+    <aside id="dmitrij">
+        <header>
+        <h2>Welcome to my page</h2>
+        <div id="z">
+        <p>My name is Kostya.</p>
+        <p>I live in Zhora.</p>
+        <p>I am 15 years old.</p>
+        </div>
+        
+        </header>
+        <img src="dmitrij.png" alt="Дмитрий" width="300" height=auto
+        >
+    </aside>
+
+    <aside id="kontakt">
+        <h2>My social networks</h2>
+        <div id="steam">
+            <a href="https://steamcommunity.com/profiles/76561198761177072/" target="_blank">Steam</a>
+        </div>
+        <div id="discord">
+            <a href="https://discord.com/users/alt1ks." target="_blank">Discord</a>
+        </div>
+        <div id="telegram">
+            <a href="https://t.me/kanapka12" target="_blank">Telegram</a>
+        </div>
+    </aside>
+
+    <img id="mira" src="mira.png" alt="Mira">
+
+    <script>
+    const burger = document.getElementById("burger");
+    const menu = document.getElementById("kontakt");
+
+    burger.addEventListener("click", () => {
+        menu.classList.toggle("open");
+    });
+    </script>
+
+</body>
+
+</html>
