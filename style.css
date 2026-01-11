@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-/* Блоки */
+/* Общий стиль блоков */
 aside {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -34,6 +34,118 @@ aside {
     backdrop-filter: blur(5px);
     color: white;
     cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Блок Дмитрия */
+#dmitrij {
+    text-align: center;
+}
+
+#dmitrij img {
+    width: 250px;
+    max-width: 80%;
+    margin-top: 20px;
+}
+
+/* Заголовок */
+header h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header div {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+/* Контакт-меню */
+#kontakt {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px; /* фиксированная высота */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 99;
+    transform: translateX(110%);
+    transition: transform 0.3s ease;
+    padding-top: 80px;
+    text-align: center;
+}
+
+#kontakt.open {
+    transform: translateX(0);
+}
+
+#kontakt h2 {
+    margin-bottom: 30px;
+}
+
+#kontakt div {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+/* Ссылки */
+a:link {
+    color: cornflowerblue;
+}
+
+a:visited {
+    color: cadetblue;
+}
+
+/* Mira — ровно под нижним краем контакт-меню */
+#mira {
+    position: absolute;
+    top: calc(20px + 400px); /* 20px — отступ меню сверху, 400px — высота меню */
+    right: 20px;
+    width: 150px;
+    height: auto;
+    transform-origin: top center;
+    animation: swing 2.5s ease-in-out infinite;
+    z-index: 9;
+}
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    100% { transform: rotate(3deg); }
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+
+    aside {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    #dmitrij img {
+        width: 70%;
+    }
+
+    #kontakt {
+        width: 80%;
+        right: 10px;
+    }
+
+    /* Mira остаётся под меню даже на телефоне */
+    #mira {
+        top: calc(20px + 400px);
+        right: 10px;
+        width: 120px;
+    }
+}
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -238,4 +350,5 @@ button {
   }
 
 }
+
 
