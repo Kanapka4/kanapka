@@ -157,28 +157,128 @@ button {
   }
 }
 
-/* Базовые стили — для больших экранов */
-div.contentblock {
-  width: 1400px;
-}
-
-/* Экран до 1280px */
+/* ===========================
+   ЭКРАНЫ ДО 1280px
+=========================== */
 @media screen and (max-width: 1280px) {
-  div.contentblock {
-    width: 1200px;
-  }
+
+    #dmitrij img {
+        left: 70%;
+        width: 250px;
+    }
+
+    #kontakt {
+        width: 260px;
+        height: 380px;
+    }
 }
 
-/* Экран до 1140px */
-@media screen and (max-width: 1140px) {
-  div.contentblock {
-    width: 1024px;
-  }
-}
-
-/* Экран до 992px */
+/* ===========================
+   ЭКРАНЫ ДО 992px (планшеты)
+=========================== */
 @media screen and (max-width: 992px) {
-  div.contentblock {
-    width: 970px;
-  }
+
+    #dmitrij {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    #dmitrij img {
+        position: static;
+        display: block;
+        margin: 20px auto 0;
+        transform: none;
+        width: 220px;
+    }
+
+    header h2 {
+        font-size: 26px;
+        top: 20px;
+    }
+
+    header div {
+        position: static;
+        transform: none;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    #mira {
+        top: 520px;
+        width: 120px;
+        height: 160px;
+    }
 }
+
+/* ===========================
+   ЭКРАНЫ ДО 768px (телефоны)
+=========================== */
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size: cover;
+    }
+
+    aside {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #kontakt {
+        width: 80%;
+        right: 10%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    #kontakt h2 {
+        margin-top: 40px;
+        font-size: 22px;
+    }
+
+    #kontakt div {
+        font-size: 20px;
+    }
+
+    #burger {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    #mira {
+        top: 600px;
+        width: 100px;
+        height: 140px;
+    }
+}
+
+/* ===========================
+   ЭКРАНЫ ДО 480px (маленькие телефоны)
+=========================== */
+@media screen and (max-width: 480px) {
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    #dmitrij img {
+        width: 180px;
+    }
+
+    #kontakt {
+        width: 90%;
+        right: 5%;
+    }
+
+    #kontakt div {
+        font-size: 18px;
+    }
+
+    #mira {
+        top: 650px;
+        width: 90px;
+        height: 120px;
+    }
+}
+
