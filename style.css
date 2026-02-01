@@ -75,7 +75,7 @@ li{
 nav{
     color: #ffffff;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 12px;
     margin-left: 25px;
     position: relative;
 }
@@ -175,6 +175,7 @@ a:hover{
 body::selection{
     background-color: #2f2e2e;
 }
+
 
 
 
