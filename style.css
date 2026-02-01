@@ -75,7 +75,7 @@ nav{
 }
 
 li{
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .icon{
@@ -157,9 +157,10 @@ a:hover{
     }
 }
 
-body::selection{
+p::selection{
     background-color: #2f2e2e;
 }
+
 
 
 
