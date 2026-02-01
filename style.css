@@ -6,10 +6,6 @@ body{
     font-style: normal;
 }
 
-body::selection{
-    background-color: #333;
-}
-
 nav, p{
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
@@ -154,4 +150,17 @@ a:hover{
     }
 
 }
+
+@media(min-width: 1024px){
+    body{
+        line-height: 24px;
+    }
+}
+
+body::selection{
+    background-color: #2f2e2e;
+}
+
+
+
 
