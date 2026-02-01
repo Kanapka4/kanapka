@@ -4,6 +4,7 @@ body{
     font-family: "Acme", sans-serif;
     font-weight: 300;
     font-style: normal;
+    text-shadow: 1px 1px 4px #212020;
 }
 
 nav, p{
@@ -26,7 +27,7 @@ header{
     color: white;
     font-size: 48px;
     padding: 10px 0 0 20px;
-    text-shadow: 1px 1px 4px #212020;
+    
 }
 
 main{
@@ -66,6 +67,7 @@ section p{
     border-radius: 115px;
     margin-top: -30px;
 }
+
 li{
     margin-bottom: 20px;
 }
@@ -75,8 +77,8 @@ nav{
     font-size: 30px;
     margin-top: 20px;
     margin-left: 25px;
+    position: relative;
 }
-
 
 
 .icon{
@@ -150,6 +152,18 @@ a:hover{
         display: block;
     }
 
+    li{
+        margin-bottom: 17px;
+    }
+
+    nav{
+        margin-top: 11px;
+    }
+
+    .prawy h1{
+        margin-top: 10px;
+    }
+
 }
 
 @media(min-width: 1024px){
@@ -161,10 +175,6 @@ a:hover{
 body::selection{
     background-color: #2f2e2e;
 }
-
-
-
-
 
 
 
