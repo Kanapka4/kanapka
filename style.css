@@ -161,6 +161,10 @@ body::selection{
     background-color: #2f2e2e;
 }
 
+p:nth-of-type(1){
+    margin-top: 10px;
+}
+
 
 
 
