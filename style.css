@@ -196,4 +196,12 @@ body::selection {
     p {
         line-height: 26.8px;
     }
+
+}
+
+
+@media (min-width: 425px) and (max-width: 768px){
+    section p {
+        line-height: 27px;
+    }
 }
