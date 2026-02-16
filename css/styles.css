@@ -284,7 +284,14 @@ p {
     margin: 1.5rem 0 1rem;
   }
 
+  @media (min-width: 2560px) {
+  .main_home-img {
+    padding: 0 35rem;
+  }
+}
+
   .main_skills, .main_contact {
     padding: 0rem 0;
   }
+
 }
