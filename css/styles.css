@@ -111,7 +111,6 @@ a:hover {
 
 .main_title h1 {
   margin-top: 2rem;
-  margin-bottom: 1.3rem;
   font-size: 4rem;
   font-weight: 500;
 }
@@ -125,7 +124,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 7rem;
+  padding: 1rem 7rem;
   margin-top: 2rem;
 }
 
@@ -147,12 +146,11 @@ a:hover {
 }
 
 p {
-  margin-bottom: 0.7rem;
+  margin: 0.7rem;
 }
 
 .about_h1, .skills_h1, .contact_h1 {
   font-size: 3.2rem;
-  margin: 2rem 0 1.3rem;
   font-weight: 500;
 }
 
@@ -275,23 +273,31 @@ p {
   }
 
   .about_p, .skills_p {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     line-height: 1.5rem;
+    max-width: 100%;
   }
 
   .about_h1, .skills_h1, .contact_h1 {
     font-size: 2.4rem;
-    margin: 1.5rem 0 1rem;
   }
-
-  @media (min-width: 2560px) {
-  .main_home-img {
-    padding: 0 35rem;
-  }
-}
 
   .main_skills, .main_contact {
     padding: 0rem 0;
   }
 
+  .main_contact a{
+    font-size: 1.7rem;
+  }
 }
+
+@media (min-width: 2560px) {
+  .main_home-img {
+    padding: 0 35rem;
+  }
+}
+
+.main_contact{
+  padding-bottom: 3rem;
+}
+
