@@ -37,7 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .header_title a {
@@ -304,4 +304,5 @@ p {
 
 .main_contact{
   padding-bottom: 3rem;
+
 }
