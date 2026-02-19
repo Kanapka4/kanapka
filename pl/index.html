@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Kanapka</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header>
+      <div class="header_inner">
+
+        <button class="burger" aria-label="Otwórz menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header_title">
+          <a href="#home">Kanapka</a>
+        </div>
+
+        <nav class="header_menu" id="menu">
+          <ul>
+            <li><a href="#home">Strona główna</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main>
+      <section class="main_home" id="home">
+        <div class="main_inner">
+          <div class="main_title">
+            <h1>Cześć!</h1>
+            <p>Jestem początkującym programistą.</p>
+          </div>
+
+          <div class="main_home-img">
+            <img src="grafic/tyler2.png" alt="Tyler" class="tyler2-img">
+            <img src="grafic/tyler.png" alt="Tyler" class="tyler-img">
+          </div>
+        </div>
+      </section>
+
+      <section class="main_about main_section" id="about">
+        <div class="about_h1">
+          <h1>O mnie</h1>
+        </div>
+        <div class="about_p">
+          <p>Cześć, mój drogi przyjacielu. Tutaj możesz przeczytać moją historię, zainteresowania i wszystko, co może Cię zainteresować.</p>
+          <p class="name">Mam na imię Kostia – imię, szczerze mówiąc, dość dziwne, specjalnie mi się nie podoba, ale i tak dziękuję rodzicom. Mam piętnaście lat – prosty i lekki wiek, pełen energii, pomysłów, nietypowych podejść i wszystkich tych rzeczy, których ludzie potem tak długo próbują odzyskać w dorosłym życiu. Prawda?</p>
+          <p>Obecnie interesuję się klasyczną literaturą (oczywiście), IT, filmami i serialami. Wśród ulubionych książek są: <a href="https://pl.wikipedia.org/wiki/Zbrodnia_i_kara" target="_blank">«Zbrodnia i kara»</a>, <a href="https://pl.wikipedia.org/wiki/Wichrowe_Wzg%C3%B3rza" target="_blank">«Wichrowe Wzgórza»</a> oraz <a href="https://pl.wikipedia.org/wiki/Na_Zachodzie_bez_zmian_(powie%C5%9B%C4%87)" target="_blank">«Na Zachodzie bez zmian»</a>. Z filmów i seriali najbardziej lubię <a href="https://pl.wikipedia.org/wiki/Podziemny_kr%C4%85g_(film)" target="_blank">«Podziemny krąg»</a>, <a href="https://pl.wikipedia.org/wiki/Breaking_Bad" target="_blank">«Breaking Bad»</a> i <a href="https://pl.wikipedia.org/wiki/Rodzina_Soprano" target="_blank">«Rodzina Soprano»</a>. Bardzo polecam każdemu, kto to czyta, koniecznie zapoznać się z tymi dziełami sztuki.</p>
+          <p>Wszystko zaczęło się, gdy miałem sześć lat. A na moje jedenaste urodziny dostałem w prezencie <a href="https://www.notebookcheck.net/Asus-X50N.9305.0.html" target="_blank">Asusa X50N</a> – starego, zakurzonego, używanego, ale tak bardzo mojego. To było moje pierwsze spotkanie z komputerem. Grałem w gry i bardzo chciałem tworzyć coś własnego. Cztery lata później skończyłem szkołę, zdałem egzaminy. I trzeba było wybrać zawód. Wybrałem programistę. W chwili pisania tych słów jestem na pierwszym roku studiów.</p>
+        </div>
+      </section>
+
+      <section class="main_skills main_section" id="skills">
+        <div class="skills_h1">
+          <h1>Umiejętności</h1>
+        </div>
+        <div class="skills_p">
+          <p>Jak już wspomniałem, jestem na pierwszym roku. Mam podstawową wiedzę z <a href="https://pl.wikipedia.org/wiki/HTML" target="_blank">HTML</a>, <a href="https://pl.wikipedia.org/wiki/CSS" target="_blank">CSS</a> i <a href="https://pl.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>. Potrafię tworzyć proste strony internetowe. Ciągle się uczę i rozwijam umiejętności. Bardzo interesuje mnie też backend i bazy danych.</p>
+        </div>
+      </section>
+
+      <section class="main_contact main_section" id="contact">
+        <div class="contact_h1">
+          <h1>Kontakt</h1>
+        </div>
+        <div class="contact_p">
+          <p>
+            <a href="https://discord.gg/2YGX7Nat">Discord</a>
+            <a href="https://t.me/kanapka4">Telegram</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script>
+    const img = document.querySelector('.tyler2-img');
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        img.classList.add('hidden');
+      }, 300);
+    });
+
+    function showImage() {
+      img.classList.remove('hidden');
+      img.classList.add('visible');
+
+      setTimeout(() => {
+        img.classList.remove('visible');
+        img.classList.add('hidden');
+      }, 300);
+    }
+
+    function startLoop() {
+      const delay = Math.random() * (60000 - 10000) + 20000;
+
+      setTimeout(() => {
+        showImage();
+        startLoop();
+      }, delay);
+    }
+
+    startLoop();
+
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('#menu');
+    const body = document.body;
+
+    function toggleMenu() {
+      burger.classList.toggle('active');
+      menu.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    }
+
+    burger.addEventListener('click', toggleMenu);
+
+    document.querySelectorAll('.header_menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (menu.classList.contains('active')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    document.addEventListener('click', e => {
+      if (menu.classList.contains('active') &&
+          !menu.contains(e.target) &&
+          !burger.contains(e.target)) {
+        toggleMenu();
+      }
+    });
+  </script>
+
+</body>
+</html>

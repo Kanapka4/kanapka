@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kanapka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+
+    if (lang.startsWith("ru")) {
+      window.location.href = "./ru/";
+    } else if (lang.startsWith("pl")) {
+      window.location.href = "./pl/";
+    } else {
+      window.location.href = "./en/";
+    }
+  </script>
+
+  </body>
+
+</html>
