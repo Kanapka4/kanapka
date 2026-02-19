@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Loading...</title>
+  <script>
+    const lang = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+    const base = lang.toLowerCase().startsWith('ru') ? '/ru/' : '/en/';
+    window.location.replace(base + (window.location.search + window.location.hash));
+  </script>
+</head>
+<body></body>
+</html>
