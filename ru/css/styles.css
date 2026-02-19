@@ -112,6 +112,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .main_title h1 {
@@ -297,6 +298,7 @@ p {
 
   .about_p a, .skills_p , .contact_p a {
     font-weight: 200;
+    font-size: 1.6rem.
   }
 }
 
@@ -310,3 +312,4 @@ p {
   padding-bottom: 3rem;
 
 }
+
