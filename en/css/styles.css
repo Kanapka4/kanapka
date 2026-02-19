@@ -37,7 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.6rem 2rem;
 }
 
 .header_title a {
@@ -112,6 +112,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .main_title h1 {
@@ -304,4 +305,8 @@ p {
 
 .main_contact{
   padding-bottom: 3rem;
+}
+
+ul{
+  line-height: 1rem;
 }
