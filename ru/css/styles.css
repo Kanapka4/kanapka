@@ -283,7 +283,7 @@ p {
   .about_p, .skills_p {
     text-align: left;
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 1.8rem;
     max-width: 100%;
   }
 
@@ -322,6 +322,7 @@ p {
     width: 203px;
   }
 }
+
 
 
 
