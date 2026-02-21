@@ -243,8 +243,7 @@ p {
   }
 
   .main_home-img {
-    padding: 0 1rem;
-    gap: 1rem;
+    padding: 0 1rem 4rem;
   }
 
   .tyler2-img, .tyler-img {
@@ -262,7 +261,8 @@ p {
   }
 
   .tyler2-img, .tyler-img {
-    height: 10rem;
+    height: 18rem;
+    width: 150px;
   }
 
   .main_title p {
@@ -279,6 +279,7 @@ p {
   }
 
   .about_p, .skills_p {
+    text-align: left;
     font-size: 1.7rem;
     line-height: 1.5rem;
     max-width: 100%;
@@ -310,3 +311,11 @@ p {
 ul{
   line-height: 1rem;
 }
+
+@media (min-width: 400px) and (max-width: 480px) {
+  .tyler-img, .tyler2-img {
+    height: 20rem;
+    width: 203px;
+  }
+}
+
