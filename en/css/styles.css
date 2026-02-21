@@ -1,4 +1,6 @@
 html {
+  background-color: #000000;
+  min-height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -318,5 +320,6 @@ ul{
     width: 203px;
   }
 }
+
 
 
