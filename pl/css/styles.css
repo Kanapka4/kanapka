@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  background-color: #000000;
+  min-height: 100vh;
 }
 
 .container {
@@ -315,4 +317,5 @@ p {
     width: 203px;
   }
 }
+
 
