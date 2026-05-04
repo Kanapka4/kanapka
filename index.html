@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>маша</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">маша</a>
+      <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#works">Работы</a>
+        <a href="#contact">Контакт</a>
+        <div class="theme_wrapper" id="theme_wrapper" onclick="theme()">
+        <div class="theme" id="theme"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="title" id="title">
+        <h1 class="title_inner">Планы партии, планы народа — выше всего!</h1>
+        <p id="p">Програмирование, Html, Css, Js, MySQL</p>
+        <a href="#works">
+        <button id="btn">Смотреть проэкты</button></a>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about_title">
+          <h2 >Обо мне</h2>
+          <span></span>
+        </div>
+        <p>
+          Я - начинающий программист, который увлекается веб-разработкой. Я
+          изучаю HTML, CSS, JavaScript и MySQL, чтобы создавать красивые и
+          функциональные веб-сайты. Моя цель - стать профессиональным
+          разработчиком и создавать проекты, которые будут полезны людям.
+        </p>
+      </section>
+      
+      <section class="works" id="works">
+        <div class="works_title">
+          <h2>Работы</h2>
+          <span></span>
+        </div>
+        <div class="projects">
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=AFUVW0E6j0rFhFlL">
+        <div class="project">
+          <img src="https://picsum.photos/id/1015/800/600" alt="Project 1">
+          <p>Название проекта 1</p>
+          <h3>Описание проекта 1</h3>
+          <div class="nw"><span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span></div>
+        </div>
+        </a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=AFUVW0E6j0rFhFlL">
+        <div class="project">
+          <img src="https://picsum.photos/id/201/800/600" alt="Project 2">
+          <p>Название проекта 2</p>
+          <h3>Описание проекта 2</h3>
+          <div class="nw"><span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span></div>
+        </div>
+        </a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=AFUVW0E6j0rFhFlL">
+        <div class="project">
+          <img src="https://picsum.photos/id/870/800/600" alt="Project 3">
+          <p>Название проекта 3</p>
+          <h3>Описание проекта 3</h3>
+          <div class="nw"><span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span></div>
+        </div>
+        </a>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact_title">
+          <h2>Давайте создадим что-то вместе!</h2>
+          <span></span>
+          <p>
+            Пиши мне на почту: <a href="https://youtu.be/dQw4w9WgXcQ?si=AFUVW0E6j0rFhFlL">example@email.com</a>
+          </p>
+          <p class="prawa">© 2026 echo. Все права защищены.</p>
+        </div>
+        
+      </section>
+    </main>
+
+    <script>
+      function theme() {
+        document.body.classList.toggle("light");
+        document.getElementById("theme").classList.toggle("light");
+        document.getElementById("title").classList.toggle("light");
+        document.getElementById("btn").classList.toggle("light");
+        document.getElementById("theme_wrapper").classList.toggle("light");
+        document.getElementById("about").classList.toggle("light");
+        document.getElementById('p').classList.toggle('light');
+        document.getElementById('works').classList.toggle('light');
+        document.getElementById('contact').classList.toggle('light');
+      }
+    </script>
+  </body>
+</html>
