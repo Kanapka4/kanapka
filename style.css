@@ -352,11 +352,6 @@ img{
   background: none;
 }
 
-.works.light .project p, .works.light .project h3, .works.light .project span{
-  color: #0f0f0f;
-}
-
-
 a{
   color: #fff;
   text-decoration: underline;
@@ -402,4 +397,14 @@ a{
   header {
     padding: 1rem 3%;
   }
+}
+.project span{
+  padding-bottom: 2px;
+}
+
+.works.light .chuj{
+  background: rgba(10, 10, 10, 0.75);
+  padding-bottom: 2rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
