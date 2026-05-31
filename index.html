@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kanapka</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Kanapka</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#works">Projects</a>
+        <a href="#contact">Contact</a>
+        <div class="theme_wrapper" id="theme_wrapper" onclick="theme()">
+        <div class="theme" id="theme"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="title" id="title">
+        <h1 class="title_inner">Party plans, the people's plans — above all!</h1>
+        <p id="p">Programming, HTML, CSS, JavaScript, MySQL</p>
+        <a href="#works">
+        <button id="btn">View Projects</button></a>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about_title">
+          <h2>About Me</h2>
+          <span></span>
+        </div>
+        <p>
+          I am an aspiring developer interested in web development. I study HTML,
+          CSS, JavaScript and MySQL to build beautiful and functional websites.
+          My goal is to become a professional developer and create projects
+          that are useful to people.
+        </p>
+      </section>
+      
+      <section class="works" id="works">
+        <div class="works_title">
+          <h2>Projects</h2>
+          <span></span>
+        </div>
+        <div class="projects">
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=AFUVW0E6j0rFhFlL">
+        <div class="project">
+          <img src="https://picsum.photos/id/1015/800/600" alt="Project 1">
+          <div class="chuj">
+          <p>Project Title 1</p>
+          <h3>Project Description 1</h3>
+          <div class="nw"><span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span></div>
+          </div>
+        </div>
+        </a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=AFUVW0E6j0rFhFlL">
+        <div class="project">
+          <img src="https://picsum.photos/id/201/800/600" alt="Project 2">
+          <div class="chuj">
+          <p>Project Title 2</p>
+          <h3>Project Description 2</h3>
+          <div class="nw"><span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span></div>
+          </div>
+        </div>
+        </a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=AFUVW0E6j0rFhFlL">
+        <div class="project">
+          <img src="https://picsum.photos/id/870/800/600" alt="Project 3">
+          <div class="chuj">
+          <p>Project Title 3</p>
+          <h3>Project Description 3</h3>
+          <div class="nw"><span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span></div>
+          </div>
+        </div>
+        </a>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact_title">
+          <h2>Let's build something together!</h2>
+          <span></span>
+          <p class="m">
+            Email me at: <a href="mailto:kanapkaservice@email.com" class="pizda">kanapkaservice@email.com</a>
+          </p>
+          <p class="prawa">© 2026 echo. All rights reserved.</p>
+        </div>
+        
+      </section>
+    </main>
+
+    <script>
+      function theme() {
+        document.body.classList.toggle("light");
+        document.getElementById("theme").classList.toggle("light");
+        document.getElementById("title").classList.toggle("light");
+        document.getElementById("btn").classList.toggle("light");
+        document.getElementById("theme_wrapper").classList.toggle("light");
+        document.getElementById("about").classList.toggle("light");
+        document.getElementById('p').classList.toggle('light');
+        document.getElementById('works').classList.toggle('light');
+        document.getElementById('contact').classList.toggle('light');
+      }
+    </script>
+  </body>
+</html>
