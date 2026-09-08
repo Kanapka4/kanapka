@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Clicker</title>
+  </head>
+  <body class="clicker_body">
+    <header>
+      <div class="logo1">
+        <a href="" class="kanapka"><img src="../kanapka.png" /></a>
+        <a href="../index.html" class="logo lp">Kanapka</a>
+      </div>
+      <nav>
+        <a href="../index.html" class="lp">Back to Homepage</a>
+      </nav>
+    </header>
+    <div class="clicker_div">
+      <h2 id="clicker_h2" class="clicker_h2">
+        Now you have to click at sandwitch !
+      </h2>
+      <button id="but"><img src="click_img.png" alt="img" /></button>
+    </div>
+  </body>
+  <script>
+    const button = document.getElementById("but");
+
+    const clicker_h2 = document.getElementById("clicker_h2");
+
+    let points = 0;
+
+    button.addEventListener("click", () => {
+      button.classList.remove("clicked");
+
+      void button.offsetWidth;
+
+      button.classList.add("clicked");
+
+      points = points + 1;
+
+      clicker_h2.innerText = points;
+
+      clicker_h2.style.animation = "none";
+    });
+  </script>
+</html>
